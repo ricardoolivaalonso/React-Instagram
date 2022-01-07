@@ -6,7 +6,7 @@ const PostCardComponent = ({type}) => {
     const { posts, user, setModal } = useContext( IGContext )
     
     const openModal = (e, id) => {
-        const [getPost] = posts.filter( post => post.uid == id)
+        const [getPost] = posts.filter( post => post.uid === id)
         const newModal = {...getPost, open: true}
         
         setModal(newModal)

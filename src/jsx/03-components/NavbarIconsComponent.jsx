@@ -12,7 +12,6 @@ const NavbarIconsComponent = () => {
     const navigate = useNavigate()
     const { users, setUser, posts} = useContext( IGContext )
 
-
     const getProfile = () => {
         const [currentProfile] = users.filter( user => user.username === username )
         const userPost = posts.filter( post => post.username === username)

@@ -150,14 +150,20 @@ const initialPosts = [
             {    
                 uid: uuidv4(),
                 username: 'r.watson',
-                content: 'Amazing!',
-                time: '10hr ago'       
+                content: '1979, Alexandra Palace, the first proper rock gig I attended',
+                time: '2hr ago'       
             },   
             {    
                 uid: uuidv4(),
                 username: 'penny.barbosa.98',
-                content: 'Amazing!',
-                time: '10hr ago'       
+                content: 'David Bowie, 1983, Milton Keynes. The first time i saw Bowie was great.',
+                time: '1hr ago'       
+            },   
+            {    
+                uid: uuidv4(),
+                username: 'mrandow.v.b',
+                content: 'The Who, 1988, Wembley arena. I had low expectations because, although I loved the Who, I felt they were past their best. They absolutely rocked out.',
+                time: '1hr ago'       
             }  
         ]
     },
@@ -173,13 +179,13 @@ const initialPosts = [
             {    
                 uid: uuidv4(),
                 username: 'mary_adams',
-                content: 'Amazing!',
+                content: 'Oh, dude, amazing! So professional',
                 time: '10hr ago'       
             },   
             {    
                 uid: uuidv4(),
                 username: 'penny.barbosa.98',
-                content: 'Amazing!',
+                content: 'You always publish a really cool and professional content! Thank you!',
                 time: '10hr ago'       
             }  
         ]
@@ -196,13 +202,13 @@ const initialPosts = [
             {    
                 uid: uuidv4(),
                 username: 'miche_w',
-                content: 'Amazing!',
+                content: 'Dress to Impress',
                 time: '10hr ago'       
             },   
             {    
                 uid: uuidv4(),
                 username: 'penny.barbosa.98',
-                content: 'Amazing!',
+                content: "it's ideal for any occasion!",
                 time: '10hr ago'       
             }  
         ]
@@ -211,77 +217,132 @@ const initialPosts = [
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post04,
-        description: 'Sculping wth Zbrush, I love it! ',
+        description: 'Just Announced: New Vacation Destinations Coming Soon --',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
-
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'miche_w',
+                content: "That was amazing country. Really enjoy it. I'm definitely putting Switzerland on my list.",
+                time: '10hr ago'       
+            }
+        ]
     },
     {
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post05,
-        description: 'Sculping wth Zbrush, I love it! ',
+        description: "On the road again? can be exciting, educational, exhausting and energizing! And, the food you enjoy while traveling can be delicious and memorable. Check out more information how to keep food safe.",
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+         
+            {    
+                uid: uuidv4(),
+                username: 'dclark',
+                content: 'my first experience with switzerland was when we were on our way home to germany from italy.',
+                time: '10hr ago'       
+            },  
+            {    
+                uid: uuidv4(),
+                username: 'miche_w',
+                content: 'I think if someone wants to go on a road trip through Switzerland',
+                time: '10hr ago'       
+            } 
+        ]
 
     },
     {
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post06,
-        description: 'Sculping wth Zbrush, I love it! ',
+        description: "You'll see more violence in any television crime series than you will in my films... Art is there to have a stimulating effect, if it earns its name. You have to be honest, that's the only thing.",
         liked: false,
         views: 105,
-        time: '2 days ago',
-        comments: []
+        time: '1 days ago',
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'dclark',
+                content: 'I love how this person took the time to model the toes and belly button despite the fact that they knew both would be covered up.',
+                time: 'now'       
+            }
+        ]
 
     },
     {
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post07,
-        description: 'Always green!',
+        description: 'Yes I finally made it!',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'john_tor.res',
+                content: "I'm madly inlove with your digital 3d arts",
+                time: 'now'       
+            }
+        ]
 
     },
     {
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post08,
-        description: 'Always green!',
+        description: 'If breakfast is the most important meal of the day, then start your day off right with this tantalizing tropical treat!',
         liked: false,
         views: 105,
-        time: '2 days ago',
-        comments: []
+        time: '1 days ago',
+        comments: [
+              {    
+                uid: uuidv4(),
+                username: 'r.i.t.a',
+                content: 'It could be just be, but anything involving an oven is too hard to consider for breakfast lol',
+                time: 'now'       
+            }, 
+        ]
 
     },
     {
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post09,
-        description: 'Always green!',
+        description: 'New! Simple, but oh so delicious! This rustic loaf of Whole Wheat Sourdough Fig and Walnut Bread is the perfect blend of flavors. Serve in the morning with your favorite cup of tea and a drizzle of honey!',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+              {    
+                uid: uuidv4(),
+                username: 'n_moreno02',
+                content: "I made Apple French Toasts Roll Ups for my mum's birthday breakfast yesterday and they tasted amazing!",
+                time: '1hr ago'       
+            }, 
+        ]
 
     },
     {
         uid: uuidv4(),
         username: 'ana.sacareno',
         media: Post10,
-        description: 'Always green!',
+        description: 'Lightly seasoned chicken sautéed in a dreamy lemon butter pan sauce with wine and capers, then tossed with gluten-free gnocchi is the perfect Friday night dinner.',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+              {    
+                uid: uuidv4(),
+                username: 'john_tor.res',
+                content: "After watching all of this..mm i think I'll eat cereal with some milk",
+                time: '1hr ago'       
+            }, 
+        ]
 
     },
     // ===================
@@ -289,15 +350,15 @@ const initialPosts = [
         uid: uuidv4(),
         username: 'r.watson',
         media: Post11,
-        description: 'Always green!',
+        description: 'How has exercise impacted your career?',
         liked: false,
         views: 105,
-        time: '2 days ago',
+        time: '4 days ago',
         comments: [
             {    
                 uid: uuidv4(),
                 username: 'ana.sacareno',
-                content: 'Amazing!',
+                content: 'Please do a "for people who never done anything physical in their life" version',
                 time: '10hr ago'       
             }
         ]
@@ -306,71 +367,120 @@ const initialPosts = [
         uid: uuidv4(),
         username: 'penny.barbosa.98',
         media: Post12,
-        description: 'Always green!',
+        description: 'Fun small waves!',
         liked: false,
         views: 105,
-        time: '2 days ago',
-        comments: []
+        time: '1 days ago',
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'miche_w',
+                content: 'I’m a surfer myself… but I have to say those are some massive waves',
+                time: '10hr ago'       
+            } 
+        ]
     },
     {
         uid: uuidv4(),
         username: 'james.l',
         media: Post13,
-        description: 'Always green!',
+        description: "I'll answer anything you want , If you dm me , I'm too bored , talk to me! ..",
         liked: false,
         views: 105,
-        time: '2 days ago',
-        comments: []
+        time: '4 days ago',
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'miche_w',
+                content: 'uwu',
+                time: '10hr ago'       
+            }  
+        ]
     },
     {
         uid: uuidv4(),
         username: 'arlene.stone',
         media: Post14,
-        description: 'Always green!',
+        description: "Warming up with the first cup of coffee for the day. There's a strong possibility I'll finish this first cup within the next 10 minutes.",
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'norma.ray',
+                content: 'I love it!',
+                time: '10hr ago'       
+            } 
+        ]
     },
     {
         uid: uuidv4(),
         username: 'mary_adams',
         media: Post15,
-        description: 'Always green!',
+        description: 'Im already longing for a Subway and its only 10am !!',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'norma.ray',
+                content: 'Ahhh so nostalgic when a train comes back in New York City',
+                time: '10hr ago'       
+            } 
+        ]
     },
     {
         uid: uuidv4(),
         username: 'miche_w',
         media: Post16,
-        description: 'Always green!',
+        description: 'Are you looking to customize your skateboard?',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 'romanl1567',
+                content: 'The current of skateboarding is already superhuman.',
+                time: '10hr ago'       
+            } 
+        ]
     },
     {
         uid: uuidv4(),
         username: 'mrandow.v.b',
         media: Post17,
-        description: 'Always green!',
+        description: 'Was this your families reaction to finding out your passport is expired before the big family trip?',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: 're.law18',
+                content: 'hahahahahaha xD',
+                time: '10hr ago'       
+            } 
+        ]
     },
     {
         uid: uuidv4(),
         username: 's.mith.j',
         media: Post18,
-        description: 'Always green!',
+        description: 'this adorable fox needs you, share this picture so she could find a new and warm home. thanks ya all !',
         liked: false,
         views: 105,
         time: '2 days ago',
-        comments: []
+        comments: [
+            {    
+                uid: uuidv4(),
+                username: '3stell.4m',
+                content: 'awww lovable!',
+                time: '10hr ago'       
+            } 
+        ]
     },
 ]
 
@@ -384,14 +494,25 @@ const initialUser = {
     avatar: Avatar,
     bio: 'Traveler | Musician | Catlover',
     description: 'I just a simple human :D ',
-    portfolio: 'www.instagram.com',
+    portfolio: 'https://codepen.io/ricardoolivaalonso',
     stats: {
         followers: [
+            's.mith.j',
+            'mrandow.v.b',
+            'miche_w',
+            'mary_adams',
+            'arlene.stone',
+            'james.l',
+            'penny.barbosa.98',
             'r.watson',
-            'penny.barbosa.98'
         ],
         following: [
-            'james.l'
+            's.mith.j',
+            'mrandow.v.b',
+            'miche_w',
+            'mary_adams',
+            'arlene.stone',
+            'james.l',
         ]
     }
 }
@@ -407,13 +528,25 @@ const initialUsers = [
         avatar: Avatar,
         bio: 'Traveler | Musician | Catlover',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                's.mith.j',
+                'mrandow.v.b',
+                'miche_w',
+                'mary_adams',
+                'arlene.stone',
+                'james.l',
+                'penny.barbosa.98',
+                'r.watson',
             ],
             following: [
-             
+                's.mith.j',
+                'mrandow.v.b',
+                'miche_w',
+                'mary_adams',
+                'arlene.stone',
+                'james.l',
             ]
         }
     },
@@ -423,13 +556,13 @@ const initialUsers = [
         avatar: Avatar01,
         bio: 'Im R. Watson',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                
             ],
             following: [
-             
+               
             ]
         }
     },
@@ -439,10 +572,10 @@ const initialUsers = [
         avatar: Avatar02,
         bio: 'Im Penny Barbosa',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                
             ],
             following: [
              
@@ -455,10 +588,10 @@ const initialUsers = [
         avatar: Avatar03,
         bio: 'Im James L.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                'ana.sacareno'
             ],
             following: [
              
@@ -471,10 +604,10 @@ const initialUsers = [
         avatar: Avatar04,
         bio: 'Im Arlen Stone',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                'ana.sacareno'
             ],
             following: [
              
@@ -487,10 +620,10 @@ const initialUsers = [
         avatar: Avatar05,
         bio: 'Im Mary Adams',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                'ana.sacareno'
             ],
             following: [
              
@@ -503,10 +636,10 @@ const initialUsers = [
         avatar: Avatar06,
         bio: 'Im Michelle W.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                'ana.sacareno'
             ],
             following: [
              
@@ -519,10 +652,10 @@ const initialUsers = [
         avatar: Avatar07,
         bio: 'Im Brandow VB.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                'ana.sacareno'
             ],
             following: [
              
@@ -535,10 +668,10 @@ const initialUsers = [
         avatar: Avatar08,
         bio: 'Im J Smith.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
-             
+                'ana.sacareno'
             ],
             following: [
              
@@ -553,7 +686,7 @@ const initialUsers = [
         avatar: Avatar09,
         bio: 'Im John Torres.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -569,7 +702,7 @@ const initialUsers = [
         avatar: Avatar10,
         bio: 'Im Nancy Moreno.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -585,7 +718,7 @@ const initialUsers = [
         avatar: Avatar11,
         bio: 'Im Morgan Peter.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -601,7 +734,7 @@ const initialUsers = [
         avatar: Avatar12,
         bio: 'Im Rita.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -617,7 +750,7 @@ const initialUsers = [
         avatar: Avatar13,
         bio: 'Im D Clark.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -633,7 +766,7 @@ const initialUsers = [
         avatar: Avatar14,
         bio: 'Im Estella M',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -649,7 +782,7 @@ const initialUsers = [
         avatar: Avatar15,
         bio: 'Im Rene Lawrence.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -665,7 +798,7 @@ const initialUsers = [
         avatar: Avatar16,
         bio: 'Im Roman L.',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -681,7 +814,7 @@ const initialUsers = [
         avatar: Avatar17,
         bio: 'Im Chris Bradley',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              
@@ -697,7 +830,7 @@ const initialUsers = [
         avatar: Avatar18,
         bio: 'Im Norma R. Ray',
         description: 'I just a simple human :D ',
-        portfolio: 'www.instagram.com',
+        portfolio: 'https://codepen.io/ricardoolivaalonso',
         stats: {
             followers: [
              

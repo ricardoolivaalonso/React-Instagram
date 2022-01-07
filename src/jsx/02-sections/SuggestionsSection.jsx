@@ -11,8 +11,8 @@ import Avatar from '../../img/avatar.jpeg'
 const SuggestionsSection = () => {
     const { user, users } = useContext( IGContext )
     /* https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array */
-
-    let randomUsers = users
+    let filteredusers = users.filter( user => user.username !== 'ana.sacareno')
+    let randomUsers = filteredusers
         .map( value => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value)

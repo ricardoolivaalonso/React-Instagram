@@ -8,24 +8,27 @@ import { ModalSection } from "./02-sections/ModalSection"
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { ScrollToTop } from "./00-helpers/ScrollToTop"
 import "../scss/styles.scss"
+import { NavbarSection } from "./02-sections/NavbarSection"
 
 const App = () => {
 	const { modal } = useContext(IGContext)
 	const { open } = modal
 
 	return(
-		<>
-			<BrowserRouter>
-				<ScrollToTop />
-				{ open && <ModalSection /> }
+	
+		<BrowserRouter>
+		 	<NavbarSection />
+			<ScrollToTop />
+			{ open && <ModalSection /> }
+			<main>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="/:g" element={<HomePage />} />
 					<Route path="/explore" element={<ExplorePage />} />
 					<Route path="/profile" element={<ProfilePage />} />
 				</Routes>
-			</BrowserRouter>
-		</>
+			</main>
+		</BrowserRouter>
+		
 	)
 }
 
