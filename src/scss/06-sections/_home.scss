@@ -1,0 +1,15 @@
+.home{
+    &-posts{
+        width: 100%;
+        @media (max-width: $mq-medium) {
+            max-width: 600px;
+        }
+
+        &__list{
+            display: grid;
+            gap: var(--gap);
+           
+        }
+        
+    }
+}

@@ -1,0 +1,24 @@
+.bio{
+    &__avatar{
+        grid-area: avatar;
+        @include flex(flex, center, start, row, nowrap);
+
+        @media (max-width: $mq-small) { 
+            justify-content: start;
+            padding-left: var(--gap);
+            padding-top: var(--gap);
+        }
+
+        &-photo{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            @media (max-width: $mq-small) { 
+                width: 77px;
+                height: 77px;
+            }
+        }
+    }
+}

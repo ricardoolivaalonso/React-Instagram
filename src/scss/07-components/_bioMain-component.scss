@@ -1,0 +1,25 @@
+.bio{
+    &__main{
+        grid-area: main;
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: start;
+        align-content: center;
+
+        @media (max-width: $mq-small) { 
+            padding: calc(var(--gap)/2) var(--gap) 0;
+        }
+    }
+        &__name{ @include f02(); }
+        &__ocupation{
+            @include f03();
+            color: $gray;
+            
+            &::first-letter{ text-transform: uppercase; }
+        }
+        &__description{ @include f03(); }
+        &__portfolio{
+            @include f02();
+            color: $blue;
+        }
+}

@@ -1,0 +1,22 @@
+.profile-posts{  
+    &__tab{
+        @include flex(flex, center, center, row, nowrap);
+        gap: 6px;
+        opacity: .6;
+
+        &:hover,
+        &--active{ 
+            opacity: 1;
+            border-top: 1px solid $black;
+            cursor: pointer;
+        }
+
+        &-title{
+            @include f05();
+            color: $black;
+
+            @media (max-width: $mq-small){ display: none; }
+        }
+        svg{ @media (max-width: $mq-small){ transform: scale(2); } }
+    }
+}

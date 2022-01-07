@@ -1,0 +1,14 @@
+.action-element{
+    @include f07();
+    color: $gray;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+    &--cta{
+        color: $cyan;
+    }
+    &--hover{
+        &:hover{ color: $cyan; }
+    }
+}

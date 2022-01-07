@@ -1,0 +1,10 @@
+.modal{
+    &__close{
+        position: fixed;
+        top: 24px;
+        right: 24px;
+        border: none;
+        cursor: pointer;
+        z-index: $z-index100;
+    }
+}

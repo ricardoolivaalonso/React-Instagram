@@ -1,0 +1,30 @@
+body{
+    width: 100%;
+    font-size: 16px;
+    font-stretch: 100%;
+}
+#root{
+    width: 100%;
+    max-width: var(--max-width);
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+main{
+    width: 100%;
+    max-width: var(--max-width);
+    margin-top: var(--navbar-height);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button,
+input{
+    appearance: none;
+    background-color: transparent;
+    border-radius: $radius;
+    border: none;
+}

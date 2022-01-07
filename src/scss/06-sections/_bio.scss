@@ -1,0 +1,22 @@
+.bio{
+    &__stats{
+        grid-area: stats;
+
+        @media (max-width: $mq-small) { 
+            padding: calc(var(--gap)/2) var(--gap);
+            border-top: 1px solid $border;
+        }
+    }
+        &__list{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: calc(var(--gap)*2);
+            justify-content: start;
+
+            @media (max-width: $mq-small) { 
+                column-gap: 0; 
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+     
+}

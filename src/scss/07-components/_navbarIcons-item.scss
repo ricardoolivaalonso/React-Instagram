@@ -1,0 +1,40 @@
+.navbar{
+    &__icons{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: end;
+        align-items: center;
+        column-gap: var(--gap);
+    }
+        &__item{
+            position: relative;
+            
+            &:hover::after{
+                content: '';
+                position: absolute;
+                bottom: -25%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 4px;
+                height: 4px;
+
+                border-radius: 50%;
+                background-color: $black;
+            }
+
+            @media (max-width: $mq-mobile){
+                &:nth-of-type(2),
+                &:nth-of-type(3),
+                &:nth-of-type(5){ display: none; }
+            }
+        }
+            &__avatar{
+                width: 28px;
+                height: 28px;
+                padding: 1px;
+                object-fit: cover;
+                
+                border-radius: 50%;
+                border: 1px solid $blue;
+            }
+}

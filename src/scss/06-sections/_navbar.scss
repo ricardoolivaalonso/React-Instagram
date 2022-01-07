@@ -1,0 +1,13 @@
+.navbar{
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr minmax(27.48%, 268px) 1fr;
+        column-gap: var(--gap);  
+
+        width: 100%;
+        max-width: var(--max-width);
+        padding: 0 var(--gap);
+
+        @media (max-width: $mq-mobile) { grid-template-columns: 1fr 1fr; }
+    }    
+}

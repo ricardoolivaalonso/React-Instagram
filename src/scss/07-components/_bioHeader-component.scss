@@ -1,0 +1,40 @@
+.bio{
+    &__header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "username profile settings";
+        gap: var(--gap);
+        justify-content: start;
+        align-content: center;
+        
+        @media (max-width: $mq-small) { 
+            grid-template-columns: min-content 1fr;
+            grid-template-areas: 
+                "username settings"
+                "profile profile"
+            ;
+            padding-right: var(--gap);
+            padding-top: var(--gap);
+        }
+
+    }
+        &__username{
+            grid-area: username;
+            @include f01();
+        }
+        &__button-profile{
+            grid-area: profile;
+            padding: 5px 9px;
+            font-weight: 600;
+            border: 1px solid $border;
+            cursor: pointer;
+
+            @media (max-width: $mq-small) { max-width: 250px; }
+        }
+        &__button-settings{
+            grid-area: settings;
+            border: none;
+            @media (max-width: $mq-small) { justify-self: start; }
+        }
+}

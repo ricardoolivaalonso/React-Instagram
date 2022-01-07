@@ -1,0 +1,12 @@
+.bio{
+    &__item{
+        @include f03();
+        @media (max-width: $mq-small) { 
+            @include flex(flex, center, center, column, wrap);
+        }
+    }
+        &__quantity{ 
+            @include f04(); 
+            font-weight: 500;
+        }
+}

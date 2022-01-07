@@ -1,0 +1,15 @@
+.footer{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: var(--gap);
+    }
+    &__copy,
+    &__item{
+        @include f07();
+        color: $gray;
+        cursor: pointer;
+    }
+}

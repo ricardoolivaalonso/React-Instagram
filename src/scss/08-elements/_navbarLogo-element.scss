@@ -1,0 +1,9 @@
+.navbar{        
+    &__logo{ 
+        @include flex(flex, flex-start, center, row, nowrap);
+        margin-right: var(--gap);
+        outline: none;
+    }
+        &__picture{ @include flex(flex, flex-start, center, row, nowrap); }
+            &__image{ width: 103px; }
+}

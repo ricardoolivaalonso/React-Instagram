@@ -1,0 +1,15 @@
+.explore-posts{
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: calc(var(--gap)*1.5);
+        grid-auto-flow: dense;
+        
+        @media (max-width: $mq-small){ gap: 3px; }
+    }
+
+    .profile-posts__item:nth-of-type(7n+2){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}

@@ -1,0 +1,30 @@
+.modal{
+    &__form{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: var(--gap);
+        align-items: center;
+
+        &-input{
+            height: 40px;
+            border: none;
+            outline: none;
+
+            @media (max-width: $mq-mobile){
+                width: 100%;
+            }
+        }
+        &-submit{
+            @include f04();
+            text-transform: capitalize;
+
+            border: none;
+            outline: none;
+            opacity: .5;
+            color: $cyan;
+            cursor: pointer;
+            
+            &:hover{ opacity: 1; }
+        }
+    }
+}

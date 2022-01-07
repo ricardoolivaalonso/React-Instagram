@@ -1,0 +1,15 @@
+.modal{
+    &__settings{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        column-gap: var(--gap);
+
+
+        @media (max-width: $mq-small){
+            display: none;
+        }
+
+    }
+
+}
